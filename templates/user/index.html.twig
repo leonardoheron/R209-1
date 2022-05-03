@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="form-group">
+	<form action="/createUser" method="POST">
+		<label for="exampleInputEmail1">Email address</label>
+		<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		<input type="password" name="pwd"class="form-control" id="exampleInputPassword1" placeholder="Password">
+		<input type="nom" name="nom" class="form-control" id="exampleInputName1" placeholder="Nom">
+		<input type="prenom" name="prenom" class="form-control" id="exampleInputPrenom1" placeholder="Prenom">
+		<input type="adresse" name="adresse" class="form-control" id="exampleInputAdresse1" placeholder="Adresse">
+		<input type="cp" name="cp" class="form-control" id="exampleInputCP1" placeholder="Code Postal">
+		<input type="ville" name="ville" class="form-control" id="exampleInputVille1" placeholder="Ville">
+		<input type="telephone" name="telephone" class="form-control" id="exampleInputTelephone1" placeholder="Telephone">
+		<input type="type" name="type" class="form-control" id="exampleInputType1" placeholder="Type">
+		<input type="civilite" name="civilite" class="form-control" id="exampleInputCivilite1" placeholder="Civilite">
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+{% endblock %}
